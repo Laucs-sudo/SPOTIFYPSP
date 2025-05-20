@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
   <title>PSP Spotify</title>
@@ -8,41 +8,37 @@
       color: white;
       font-family: Arial, sans-serif;
       text-align: center;
+      margin: 0;
+      padding: 10px;
     }
     .song {
       margin: 10px;
-      padding: 10px;
+      padding: 8px;
       border: 1px solid white;
     }
-    .button {
-      margin: 5px;
-      padding: 5px 10px;
-      background-color: green;
-      color: white;
+    a {
+      color: #1db954;
       text-decoration: none;
     }
-  </style>
-  <script type="text/javascript">
-    function playSong(name) {
-      var status = document.getElementById("status");
-      status.innerHTML = "Now playing: " + name;
+    a:hover {
+      text-decoration: underline;
     }
-  </script>
+  </style>
 </head>
 <body>
   <h1>PSP Spotify</h1>
   <div class="song">
     <b>Song 1</b><br>
-    <a href="#" class="button" onclick="playSong('Song 1'); return false;">Play</a>
+    <a href="song1.mp3">Download MP3</a>
   </div>
   <div class="song">
     <b>Song 2</b><br>
-    <a href="#" class="button" onclick="playSong('Song 2'); return false;">Play</a>
+    <a href="song2.mp3">Download MP3</a>
   </div>
   <div class="song">
     <b>Song 3</b><br>
-    <a href="#" class="button" onclick="playSong('Song 3'); return false;">Play</a>
+    <a href="song3.mp3">Download MP3</a>
   </div>
-  <p id="status">Select a song to play.</p>
+  <p><small>Note: Streaming and JavaScript are not supported on PSP. Only downloads will work.</small></p>
 </body>
 </html>
